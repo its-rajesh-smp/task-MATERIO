@@ -1,0 +1,20 @@
+.cardsWrapper_box {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .icon_container {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    }
+}

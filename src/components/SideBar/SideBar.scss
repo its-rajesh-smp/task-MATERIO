@@ -1,0 +1,58 @@
+// SCSS Import
+@import "../../scss/colors";
+
+.sidebar {
+    display: flex;
+    flex-shrink: 0;
+    width: 250px;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    display: none;
+
+
+
+    .sidebar_brand_box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 70px;
+        padding: 0px 20px;
+
+        .brandIcon {
+            object-fit: cover;
+            width: 30px;
+            height: 30px;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: $darkgray;
+
+        }
+    }
+}
+
+
+
+.sidebarItemBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .sidebarItemBox_divider {
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: $darkgray;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media screen and (min-width:900px) {
+    .sidebar {
+        display: block;
+    }
+}

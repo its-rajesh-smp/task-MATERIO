@@ -1,0 +1,12 @@
+// SCSS Import
+@import "../../../../scss/colors";
+
+.Header_headerList {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Header_headerList_icon {
+    color: gray;
+}

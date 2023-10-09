@@ -1,0 +1,78 @@
+// SCSS IMPORT
+@import "../../../scss/colors";
+
+.SalesByCountries {
+    min-width: 400px;
+
+    .SalesByCountries_itemcontaienr {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.SalesByCountryItem {
+    display: flex;
+    justify-content: space-between;
+
+    .SalesByCountryItem_box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon_side {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: white;
+        }
+    }
+
+    .center_side {
+        .center_side_box {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            :first-child {
+                font-size: 16px;
+                font-weight: 600;
+                color: rgb(82, 82, 82);
+
+            }
+
+
+            p {
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        .countryName {
+            font-size: 12px;
+            color: $darkgray;
+        }
+    }
+
+
+    .end_side {
+        :first-child {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(82, 82, 82);
+        }
+
+        :last-child {
+            font-size: 12px;
+            color: $darkgray;
+
+        }
+    }
+}

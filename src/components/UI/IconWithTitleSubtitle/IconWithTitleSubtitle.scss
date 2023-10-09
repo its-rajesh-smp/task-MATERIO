@@ -1,0 +1,43 @@
+@import "../../../scss/colors";
+
+.IconWithTitleSubtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .icon_box {
+        height: 40px;
+        width: 40px;
+        background-color: rgba(58, 53, 65, 0.04);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 18px;
+            height: 18px;
+            object-fit: fill;
+        }
+    }
+
+    .titleAndSubtitle_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            font-size: 12px;
+        }
+
+        :first-child {
+            color: rgb(74, 74, 74);
+            font-weight: 600;
+        }
+
+        :last-child {
+            color: $darkgray;
+        }
+
+    }
+}

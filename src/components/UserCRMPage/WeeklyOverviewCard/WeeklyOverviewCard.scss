@@ -1,0 +1,24 @@
+// SCSS Imports
+@import "../../../scss/colors";
+
+.WeeklyOverviewCard {
+    width: 400px;
+
+    .description_box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            font-size: 14px;
+            color: $darkgray ;
+        }
+    }
+
+    .detailsBtn {
+        width: 100%;
+        background-color: $primary;
+        color: white;
+        margin-top: 20px;
+    }
+}

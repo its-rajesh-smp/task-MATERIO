@@ -1,0 +1,13 @@
+.NotFound_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+
+    .NotFound_image {
+        width: 40%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+}

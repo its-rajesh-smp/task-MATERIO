@@ -1,0 +1,126 @@
+// SCSS IMPORTS
+@import "../../scss/colors";
+
+
+.loginPage_Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $background;
+
+    .loginPage_Box_Paper {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-weight: 500;
+        color: $primary;
+        margin-bottom: 2rem;
+    }
+
+    .loginPage_Box_Paper_box {
+        h2 {
+            font-weight: 700;
+            font-size: 20px;
+            color: $darkgray;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 0.875rem;
+            color: $darkgray;
+
+        }
+    }
+
+    .loginPage_Box_Paper_form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 90%;
+        height: 100%;
+
+        .loginPage_Form_box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .loginPage_loginButton {
+            background-color: $primary;
+            height: 40px;
+        }
+    }
+
+    .loginPage_switch_p {
+        font-size: 14px;
+        color: $darkgray;
+
+        span {
+            color: $primary;
+            font-weight: 500;
+        }
+    }
+
+}
+
+.login_rememberSection_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .login_rememberCheckbox {
+        color: $darkgray;
+        width: fit-content;
+    }
+
+    .login_forgotPassword {
+        color: $primary;
+        cursor: pointer;
+    }
+}
+
+
+.or_line_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+
+    div {
+        width: 40%;
+        background-color: gainsboro;
+        height: 1px;
+
+    }
+}
+
+
+.icons_group_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+    height: 30px;
+}
+
+
+// Media Queries
+@media screen and (max-width: 800px) {
+    .loginPage_Box {
+        .loginPage_Box_Paper {
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+// SCSS Import
+@import "../../../scss/colors";
+
+.StatisticsCard {
+    width: 100%;
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+
+        span {
+            color: $darkgray;
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+.StatisticsCardElements_box {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    height: 100%;
+    gap: 60px;
+}
+
+.StatisticsCardElement {
+    display: flex;
+    gap: 10px;
+
+    .iconContainer {
+        height: 44px;
+        width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .titleAndAmountContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        :first-child {
+            font-weight: 400;
+            font-size: 12px;
+            color: rgba(58, 53, 65, 0.68);
+        }
+
+        :last-child {
+            color: rgba(33, 31, 37, 0.87);
+            font-size: 20px;
+        }
+    }
+}

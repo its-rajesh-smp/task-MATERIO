@@ -1,0 +1,41 @@
+// SCSS IMPORT
+@import "../../../scss/colors";
+
+
+.CongratulationCard {
+    min-width: 400px;
+
+    .subtitle {
+        color: $darkgray;
+    }
+
+    .amount {
+        color: $primary;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .button {
+        background-color: $primary;
+        height: 30px;
+        width: 108px;
+        color: white;
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+
+        .amountAndButton_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        img {
+
+            width: 75px;
+        }
+    }
+}
